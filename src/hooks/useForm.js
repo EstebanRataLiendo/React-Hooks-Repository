@@ -17,6 +17,7 @@ export const useForm = (initialForm = {}) => {
         console.log('Formulario Reseteado')
     }
     return {
+        ...formState,
         formState,
         onInputChange,
         onResetForm
